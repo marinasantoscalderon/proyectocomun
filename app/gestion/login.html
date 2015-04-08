@@ -14,45 +14,51 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    
+    <style type="text/css">
+        .ppp {
+    
+            border: 1px solid;
+
+        }
+    </style>
+    
+    
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Empresa</a>
+  
+  
+ <div class="col-sm-offset-3 col-sm-6 ppp">
+    <form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-offset-3 control-label">Usuario</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="inputEmail3" placeholder="Usuario">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-3 control-label">Contraseña</label>
+    <div class="col-sm-6">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-6">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Recordar
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-6">
+      <button type="submit" class="btn btn-default">Entrar</button>
+    </div>
+  </div>
+</form>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Vehículos</a></li>
-        <li><a href="#">Reservas</a></li>
-        <li><a href="#">Ventas</a></li>
-        <li><a href="#">Clientes</a></li>
-        <li><a href="#">Usuarios</a></li>
-      </ul>
-      
-      <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Cerrar sesión <i class="glyphicon glyphicon-log-out">&nbsp;</i></a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<div class="clearfix pad-navbar"></div>
-
-<!--                      aquí codigo                           -->
-
-<div class="pad-footer"></div>
-<footer>
-    Último inicio de sesión: 29 de febrero de 2015
-</footer>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
