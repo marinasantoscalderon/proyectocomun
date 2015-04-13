@@ -1,0 +1,38 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    EQUIPO BACK-END
+       Angel Benedí Budría
+       Adolfo Gajón Bazán
+       Alberto Giner Bueno
+       Pablo Lacueva Aibar
+       Beatriz Oliván de la Orden
+       Carlos Talavera Larrosa
+
+    EQUIPO FRONT-END
+       José Ramón Abós Sánchez
+       Alejandro Alijarde Jaraba
+       Cristina Fantova García
+       Andrei Popescu
+       Marina Santos Calderón
+    
+
+# THANKS
+
+       Luis M. Tapia
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
+
+# SITE
+
+    Última actualización: 10/04/2015
+    Lenguaje: Castellano
+    IDE: Brackets, Gimp.
+
+
+

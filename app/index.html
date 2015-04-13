@@ -1,70 +1,425 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-  </head>
-  <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo! probando version en rama</h1>
-        <p>You now have</p>
-        <ul>
-          <li>HTML5 Boilerplate</li>
-          <li>Bootstrap</li>
-          <li>Font Awesome <i class="fa fa-flag"></i></li>
-        </ul>
-        <p>installed.</p>
-        <h3>Enjoy coding! - Yeoman</h3>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
+<html lang="en">
+
+<head>
+
+  <!-- Basic -->
+  <title>Inicio | Motor Barato</title>
+
+  <!-- Define Charset -->
+  <meta charset="utf-8">
+
+  <!-- Responsive Metatag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Page Description and Author -->
+  <meta name="description" content="Margo - Responsive HTML5 Template">
+  <meta name="author" content="iThemesLab">
+
+  <!-- Custom CSS  -->
+  <link rel="stylesheet" href="styles/main.css" type="text/css" media="screen">
+
+  <!-- Bootstrap CSS  -->
+  <link rel="stylesheet" href="asset/css/bootstrap.min.css" type="text/css" media="screen">
+
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!-- Margo CSS Styles  -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+
+  <!-- Responsive CSS Styles  -->
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+
+  <!-- Css3 Transitions Styles  -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css" media="screen">
+
+  <!-- Color CSS Styles  -->
+  <link rel="stylesheet" type="text/css" href="css/colors/red.css" title="red" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/jade.css" title="jade" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/green.css" title="green" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/blue.css" title="blue" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/beige.css" title="beige" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/cyan.css" title="cyan" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/orange.css" title="orange" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/peach.css" title="peach" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/pink.css" title="pink" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/purple.css" title="purple" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/sky-blue.css" title="sky-blue" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/colors/yellow.css" title="yellow" media="screen" />
+
+
+
+
+  <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+
+<body>
+
+  <!-- Full Body Container -->
+  <div id="container">
+
+
+    <!-- Start Header Section -->
+    <div class="hidden-header"></div>
+    <header class="clearfix">
+
+      <!-- Start Top Bar -->
+      <div class="top-bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <!-- Start Contact Info -->
+              <ul class="contact-details">
+                <li><a href="#"><i class="fa fa-map-marker"></i> C/ Feliz s/n, Zaragoza</a>
+                </li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i> Contacto@CB.es</a>
+                </li>
+                <li><a href="#"><i class="fa fa-phone"></i> +34 666 666 666</a>
+                </li>
+              </ul>
+              <!-- End Contact Info -->
+            </div>
+            <!-- .col-md-6 -->
+            <div class="col-md-5">
+              <!-- Start Social Links -->
+              <ul class="social-list">
+                <li>
+                  <a class="facebook itl-tooltip" data-placement="bottom" title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a class="twitter itl-tooltip" data-placement="bottom" title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a class="google itl-tooltip" data-placement="bottom" title="Google Plus" href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+
+              </ul>
+              <!-- End Social Links -->
+            </div>
+            <!-- .col-md-6 -->
+          </div>
+          <!-- .row -->
+        </div>
+        <!-- .container -->
       </div>
+      <!-- .top-bar -->
+      <!-- End Top Bar -->
+
+
+      <!-- Start  Logo & Naviagtion  -->
+      <div class="navbar navbar-default navbar-top">
+        <div class="container">
+          <div class="navbar-header">
+            <!-- Stat Toggle Nav Link For Mobiles -->
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- End Toggle Nav Link For Mobiles -->
+            <a class="clear navbar-brand" href="index.html">
+              <img alt="Logo" src="images/logo/logo.png" class="img-responsive hidden-sm hidden-xs fix-img large">
+              <img alt="Logo" src="images/logo/logo2.png" class="img-responsive hidden-md hidden-lg fix-img">
+            </a>
+
+          </div>
+          <div class="navbar-collapse collapse">
+            <!-- Start Navigation List -->
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a class="active" href="index.html">Inicio</a>
+
+              </li>
+              <li><a href="contact.html">Contacto</a>
+              </li>
+              <li>
+                <a href="about.html">Quiénes Somos</a>
+
+              </li>
+              <li>
+                <a href="#">Nuestros Vehículos</a>
+                <ul class="dropdown">
+                  <li><a href="seminuevos.html">Semi-Nuevos</a>
+                  </li>
+                  <li><a href="segundamano.html">Segunda Mano</a>
+                  </li>
+                  <li><a href="motos.html">Motos</a>
+                  </li>
+                </ul>
+
+              </li>
+              <li>
+                <a href="ofertas.html"><b>Ofertas</b></a>
+
+              </li>
+
+
+            </ul>
+            <!-- End Navigation List -->
+          </div>
+        </div>
+      </div>
+      <!-- End Header Logo & Naviagtion -->
+
+    </header>
+    <!-- End Header Section -->
+
+
+
+    <!-- Start Home Page Slider -->
+    <div id="home">
+      <div class="visible-xs">
+        <img src="images/slider/slide2fin.jpg" alt="Mercedes">
+      </div>
+      <!-- Carousel -->
+      <div id="main-slide" class="carousel slide hidden-xs" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#main-slide" data-slide-to="0" class="active"></li>
+          <li data-target="#main-slide" data-slide-to="1"></li>
+          <li data-target="#main-slide" data-slide-to="2"></li>
+        </ol>
+        <!--/ Indicators end-->
+
+        <!-- Carousel inner -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img class="img-responsive" src="images/slider/slide1fin.jpg" alt="slider">
+            <div class="slider-content">
+              <div class="col-md-12 text-center">
+              </div>
+            </div>
+          </div>
+          <!--/ Carousel item end -->
+          <div class="item">
+            <img class="img-responsive" src="images/slider/slide2fin.jpg" alt="slider">
+            <div class="slider-content">
+              <div class="col-md-12 text-center">
+
+              </div>
+            </div>
+          </div>
+          <!--/ Carousel item end -->
+          <div class="item">
+            <img class="img-responsive" src="images/slider/slide3fin.jpg" alt="slider">
+            <div class="slider-content">
+
+            </div>
+          </div>
+          <!--/ Carousel item end -->
+        </div>
+        <!-- Carousel inner end-->
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#main-slide" data-slide="prev">
+          <span><i class="fa fa-angle-left"></i></span>
+        </a>
+        <a class="right carousel-control" href="#main-slide" data-slide="next">
+          <span><i class="fa fa-angle-right"></i></span>
+        </a>
+      </div>
+      <!-- /carousel -->
     </div>
+    <!-- End Home Page Slider -->
 
 
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+    <!-- Start Services Section -->
+    <div class="section service">
+      <div class="container">
+        <div class="row">
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+          <!-- Start Service Icon 1 -->
+          <div class="col-md-3 col-sm-6 service-box service-center categoria" data-animation="fadeIn" data-animation-delay="01">
+            <a href="seminuevos.html">
+              <div class="service-icon">
+                <img src="images/seminuevos.png" alt="Motos" class="img-index img-responsive">
+              </div>
+            </a>
+            <div class="service-content">
+              <a href="seminuevos.html"><h4>Semi-nuevos</h4> </a>
+              <p>Coches semi-nuevos al mejor precio del mercado.</p>
+              <br>
+              <a href="seminuevos.html" role="button" class="btn btn-danger">Ver Semi-nuevos</a>
+            </div>
+          </div>
+          <!-- End Service Icon 1 -->
+
+          <!-- Start Service Icon 2 -->
+          <div class="col-md-3 col-sm-6 service-box service-center categoria" data-animation="fadeIn" data-animation-delay="02">
+            <a href="segundamano.html">
+              <div class="service-icon">
+                <img src="images/segundamano.png" alt="Motos" class="img-index img-responsive">
+
+              </div>
+            </a>
+            <div class="service-content">
+              <a href="segundamano.html"><h4>Segunda mano</h4></a>
+              <p>Coches de segunda mano en perfecto estado y con garantia.</p>
+              <br>
+              <a href="segundamano.html" role="button" class="btn btn-danger">Ver Segunda mano</a>
+            </div>
+          </div>
+          <!-- End Service Icon 2 -->
+
+          <!-- Start Service Icon 3 -->
+          <div class="col-md-3 col-sm-6 service-box service-center categoria" data-animation="fadeIn" data-animation-delay="03">
+            <a href="motos.html">
+              <div class="service-icon">
+                <img src="images/moto1.png" alt="Motos" class="img-index img-responsive">
+              </div>
+            </a>
+            <div class="service-content">
+              <a href="motos.html"><h4>Motos</h4></a>
+              <p>Motos en perfecto estado para los mas aventureros.</p>
+              <br>
+              <a href="motos.html" role="button" class="btn btn-danger">Ver motos </a>
+            </div>
+          </div>
+          <!-- End Service Icon 3 -->
+
+          <!-- Start Service Icon 4 -->
+          <div class="col-md-3 col-sm-6 service-box service-center categoria" data-animation="fadeIn" data-animation-delay="04">
+            <a href="ofertas.html">
+              <div class="service-icon">
+                <img src="images/ofertas.png" alt="Motos" class="img-index img-responsive">
+              </div>
+            </a>
+            <div class="service-content">
+              <a href="ofertas.html"><h4>Ofertas!!!</h4> </a>
+              <p>Disfruta de las mejores ofertas. Si te gusta te lo llevas .</p>
+              <br>
+              <a href="ofertas.html" role="button" class="btn btn-danger"> Ver Ofertas!!</a>
+            </div>
+          </div>
+          <!-- End Service Icon 4 -->
 
 
-        <!-- build:js scripts/main.js -->
-        <script src="bower_components/jquery/jquery.js"></script>
-        <script src="scripts/main.js"></script>
-        <script src="scripts/hello.js"></script>
-        <!-- endbuild -->
 
-        <!-- build:js scripts/vendor/bootstrap.js -->
-        <script src="bower_components/bootstrap/js/affix.js"></script>
-        <script src="bower_components/bootstrap/js/alert.js"></script>
-        <script src="bower_components/bootstrap/js/dropdown.js"></script>
-        <script src="bower_components/bootstrap/js/tooltip.js"></script>
-        <script src="bower_components/bootstrap/js/modal.js"></script>
-        <script src="bower_components/bootstrap/js/transition.js"></script>
-        <script src="bower_components/bootstrap/js/button.js"></script>
-        <script src="bower_components/bootstrap/js/popover.js"></script>
-        <script src="bower_components/bootstrap/js/carousel.js"></script>
-        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
-        <script src="bower_components/bootstrap/js/collapse.js"></script>
-        <script src="bower_components/bootstrap/js/tab.js"></script>
-        <!-- endbuild -->
+        </div>
+        <!-- .row -->
+      </div>
+      <!-- .container -->
+    </div>
+    <!-- End Services Section -->
+
+
+    <!-- Start Purchase Section -->
+    <div class="section purchase">
+      <div class="container">
+
+        <!-- Start Video Section Content -->
+        <div class="section-video-content text-center">
+
+          <!-- Start Animations Text -->
+          <h1 class="fittext wite-text uppercase tlt">
+                      <span class="texts">
+                        <span>Coches</span>
+                        <span>Motos</span>
+                        <span>Semi-Nuevos</span>
+                        <span>Segunda-mano</span>
+
+                      </span>
+                        Al mejor precio del mercado. <br/>Contacta con nosotros para mas informacion
+                    </h1>
+          <!-- End Animations Text -->
+
+
+          <!-- Start Buttons -->
+
+          <a href="contact.html" class="btn-system btn-large btn-wite"><i class="fa fa-download"></i> Contacta </a>
+
+        </div>
+        <!-- End Section Content -->
+
+      </div>
+      <!-- .container -->
+    </div>
+    <!-- End Purchase Section -->
+
+
+
+
+
+
+
+
+
+
+    <!-- Start Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="row footer-widgets">
+
+          <!-- Start Copyright -->
+          <div class="copyright-section">
+            <div class="row">
+              <div class="col-md-6">
+                <p>&copy; 2015 Motor Barato - Todos los derechos reservados</p>
+              </div>
+              <!-- .col-md-6 -->
+              <div class="col-md-6">
+                <ul class="footer-nav">
+                  <li><a href="sitemap.html">Sitemap</a>
+                  </li>
+                  <li><a href="legal.html">Legal</a>
+                  </li>
+                  <li><a href="contact.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- .col-md-6 -->
+            </div>
+            <!-- .row -->
+          </div>
+          <!-- End Copyright -->
+
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+
+
+  </div>
+  <!-- End Full Body Container -->
+
+  <!-- Go To Top Link -->
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <div id="loader">
+    <div class="spinner">
+      <div class="dot1"></div>
+      <div class="dot2"></div>
+    </div>
+  </div>
+
+
+
 </body>
+<!-- Margo JS  -->
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.migrate.js"></script>
+<script type="text/javascript" src="js/modernizrr.js"></script>
+<script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/jquery.appear.js"></script>
+<script type="text/javascript" src="js/count-to.js"></script>
+<script type="text/javascript" src="js/jquery.textillate.js"></script>
+<script type="text/javascript" src="js/jquery.lettering.js"></script>
+<script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
+<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.parallax.js"></script>
+<script type="text/javascript" src="js/mediaelement-and-player.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
 </html>

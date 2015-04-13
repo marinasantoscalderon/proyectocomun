@@ -1,0 +1,337 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gestion de usuarios</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="principal.html"><img src="../images/logos.png" alt="logo pequeño" width="75" height="18"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="vehiculos.html">Vehículos</a>
+                    </li>
+                    <li><a href="reservas.html">Reservas</a>
+                    </li>
+                    <li><a href="ventas.html">Ventas</a>
+                    </li>
+                    <li><a href="clientes.html">Clientes</a>
+                    </li>
+                    <li class="active"><a href="#">Usuarios <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">Cerrar sesión <i class="glyphicon glyphicon-log-out">&nbsp;</i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+    <div id="cuerpo" class="container-fluid">
+        <h1>Gestión de Usuarios</h1>
+
+        <div class="panel panel-default col-md-12">
+            <div class="panel-body">
+                <div class="col-md-9">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="nombreusu" class="col-sm-1 control-label">nombre</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="nombreusu" placeholder="nombre">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-1 col-sm-11">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> administradores
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-1 col-sm-11">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> activos
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3 pull-right">
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">nuevo usuario</button>
+                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title">Nuevo usuario</h4>
+                                </div>
+                                <div class="container">
+                                    <div class="form-group col-lg-6 col-md-6">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre">
+                                    </div>
+
+                                    <div class="clearfix"> </div>
+
+                                    <div class="form-group col-lg-6 col-md-6">
+                                        <label for="login">Login</label>
+                                        <input type="text" class="form-control" id="login">
+                                    </div>
+
+                                    <div class="clearfix"> </div>
+
+                                    <div class="form-group col-lg-6 col-md-6">
+                                        <label for="clave">Password</label>
+                                        <input type="password" class="form-control" id="clave">
+                                    </div>
+
+                                    <div class="clearfix"> </div>
+
+                                    <div class="form-group col-lg-6 col-md-6">
+                                        <label for="email">email</label>
+                                        <input type="email" class="form-control" id="email">
+                                    </div>
+
+                                    <div class="clearfix"> </div>
+
+                                    <div class="form-group col-lg-6 col-md-6">
+                                        <label for="telefono">Telefono</label>
+                                        <input type="text" class="form-control" id="telefono">
+                                    </div>
+
+                                    <div class="clearfix"> </div>
+
+                                    <div class="form-group col-lg-6 col-md-6">
+                                        <label>Administrador&nbsp;&nbsp;<input type="checkbox"></label>
+                                    </div>
+
+                                    <div class="clearfix"> </div>
+
+                                    <div class="form-group col-lg-6 col-md-6">
+                                        <label>Activo&nbsp;&nbsp;<input type="checkbox"></label>
+                                    </div>
+
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-default">Guardar</button>
+                                        <button type="submit" class="btn btn-default">Cancelar</button>
+                                        <br>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--   fin de boton nuevo   -->
+
+                    <input class="btn btn-default" type="button" value="buscar">
+                </div>
+            </div>
+        </div>
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>login <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                    </th>
+                    <th>nombre <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                    </th>
+                    <th>email <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                    </th>
+                    <th>teléfono <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                    </th>
+                    <th>administrador</th>
+                    <th>activo</th>
+                    <th>editar</th>
+                    <th>eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>agajon</td>
+                    <td>Adolfo Gajon</td>
+                    <td>email@gmail.com</td>
+                    <td>666123456</td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>agajon</td>
+                    <td>Adolfo Gajon</td>
+                    <td>email@gmail.com</td>
+                    <td>666123456</td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>agajon</td>
+                    <td>Adolfo Gajon</td>
+                    <td>email@gmail.com</td>
+                    <td>666123456</td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>agajon</td>
+                    <td>Adolfo Gajon</td>
+                    <td>email@gmail.com</td>
+                    <td>666123456</td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>agajon</td>
+                    <td>Adolfo Gajon</td>
+                    <td>email@gmail.com</td>
+                    <td>666123456</td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>agajon</td>
+                    <td>Adolfo Gajon</td>
+                    <td>email@gmail.com</td>
+                    <td>666123456</td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pager">
+            <div class="btn-group">
+                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-fast-backward" aria-hidden="true"></span>
+                </button>
+                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
+                </button>
+                <button class="btn btn-default" type="button">1</button>
+                <button class="btn btn-default active" type="button">2</button>
+                <button class="btn btn-default" type="button">3</button>
+                <button class="btn btn-default" type="button">4</button>
+                <button class="btn btn-default" type="button">...</button>
+                <button class="btn btn-default" type="button">10</button>
+                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span>
+                </button>
+                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-fast-forward" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pie_backend">
+        Último inicio de sesión: 29 de febrero de 2015
+    </footer>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    
+
+    <!-- build:js scripts/main.js -->
+    <script src="../bower_components/jquery/jquery.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/hello.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/bootstrap.js -->
+    <script src="../bower_components/bootstrap/js/affix.js"></script>
+    <script src="../bower_components/bootstrap/js/alert.js"></script>
+    <script src="../bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="../bower_components/bootstrap/js/tooltip.js"></script>
+    <script src="../bower_components/bootstrap/js/modal.js"></script>
+    <script src="../bower_components/bootstrap/js/transition.js"></script>
+    <script src="../bower_components/bootstrap/js/button.js"></script>
+    <script src="../bower_components/bootstrap/js/popover.js"></script>
+    <script src="../bower_components/bootstrap/js/carousel.js"></script>
+    <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="../bower_components/bootstrap/js/collapse.js"></script>
+    <script src="../bower_components/bootstrap/js/tab.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
