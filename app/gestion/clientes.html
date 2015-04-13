@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ventas</title>
+    <title>Clientes</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -40,12 +40,13 @@
                     </li>
                     <li><a href="reservas.html">Reservas</a>
                     </li>
-                    <li class="active"><a href="#">Ventas <span class="sr-only">(current)</span></a></li>
-                    <li><a href="clientes.html">Clientes</a>
+                    <li><a href="ventas.html">Ventas</a>
+                    </li>
+                    <li class="active"><a href="clientes.html">Clientes<span class="sr-only">(current)</span></a>
                     </li>
                     <li><a href="usuarios.html">Usuarios</a>
-                    </li>
-                </ul>
+                    </li>      
+                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="login.html">Cerrar sesión <i class="glyphicon glyphicon-log-out">&nbsp;</i></a>
@@ -57,16 +58,22 @@
         <!-- /.container-fluid -->
     </nav>
     <div id="cuerpo">
-        <h1>Ventas</h1>
+        <h1>Clientes</h1>
         <div class="container-fluid">
             <div class="panel panel-default col-md-12">
                 <div class="panel-body">
                     <div class="col-md-9">
                         <form class="form-horizontal">
                             <div class="form-group">
-                                <label for="nombre" class="col-sm-1 control-label">Venta</label>
+                                <label for="nombre" class="col-sm-1 control-label">Nombre</label>
                                 <div class="col-sm-9">
-                                    <input type="text" class="form-control" id="nombre" placeholder="nombre">
+                                    <input type="text" class="form-control" id="nom" placeholder="nombre cliente">
+                                </div>
+                            </div>    
+                               <div class="form-group">
+                                <label for="nombre" class="col-sm-1 control-label">Usuario</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="usu" placeholder="mail cliente">
                                 </div>
                             </div>
                         </form>
@@ -74,7 +81,7 @@
                     <div class="col-md-3 pull-right">
                         <!--       boton nuevo      -->
 
-                        <button type="button" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">Nueva Venta</button>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">Nuevo cliente</button>
 
                         <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
@@ -83,46 +90,36 @@
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                                         </button>
-                                        <h4 class="modal-title">Nueva venta</h4>
+                                        <h4 class="modal-title">Nuevo Cliente</h4>
                                     </div>
                                     <div class="container">
                                         <div class="form-group col-lg- col-md-6">
-                                            <label for="cliente">Cliente</label>
-                                            <select id="cliente" class="form-control">
-                                                <option>Alfredo Gajón</option>
-                                                <option>Gloria Fuertes</option>
-                                                <option>Esther Colero</option>
-                                            </select>
+                                            <label for="mail">Email</label>
+                                             <input type="email" class="form-control" id="mail">
+                                        </div>
+
+                                        <div class="clearfix"> </div> <div class="form-group col-lg- col-md-6">
+                                            <label for="nombre">Nombre</label>
+                                             <input type="email" class="form-control" id="nombre">
                                         </div>
 
                                         <div class="clearfix"> </div>
 
                                         <div class="form-group col-lg-6 col-md-6">
-                                            <label for="vendedor">Vendedor</label>
-                                            <select id="vendedor" class="form-control">
-                                                <option>Paco Pil</option>
-                                                <option>Bustín StClaire</option>
-                                                <option>Carlos Arturo</option>
-                                                <option>Pili Manili</option>
-                                            </select>
+                                            <label for="telefono">Teléfono</label>
+                                            <input type="email" class="form-control" id="telefono">
                                         </div>
 
                                         <div class="clearfix"> </div>
                                         <div class="form-group col-lg-6 col-md-6">
-                                            <label for="vehículo">Vehículo</label>
-                                            <select id="vehículo" class="form-control">
-                                                <option>5487dsf</option>
-                                                <option>5499fgr</option>
-                                                <option>9885fhr</option>
-                                                <option>2812bbg</option>
-                                                <option>8127jhj</option>
-                                            </select>
+                                            <label for="direccion">Dirección</label>
+                                            <input type="email" class="form-control" id="direccion">
                                         </div>
                                         <div class="clearfix"> </div>
 
                                         <div class="form-group col-lg-6 col-md-6">
-                                            <label for="precioventa">PVP venta</label>
-                                            <input type="email" class="form-control" id="precioventa">
+                                            <label for="DNI">DNI</label>
+                                            <input type="email" class="form-control" id="DNI">
                                         </div>
 
                                         <div class="col-sm-offset-2 col-sm-10">
@@ -147,60 +144,56 @@
             <table class="table table-bordered table-striped table-hover">
                 <thead>
                     <tr>
-                        <th>Nº Venta <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                        <th>Usuario (email) <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
                         </th>
-                        <th>Cliente <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                        <th>Nombre <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
                         </th>
-                        <th>Vehículo <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                        <th>D.N.I. <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
                         </th>
-                        <th>Vendedor <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                        <th>Teléfono <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
                         </th>
-                        <th>PVP Venta <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a></th>
-                        <th>Editar</th>
-                        <th>Eliminar</th>
+                        <th>Dirección <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a></th>
+                    <th>Editar</th>
+                    <th>Borrar</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>0001</td>
+                        <td>mail@delcliente.es</td>
                         <td>Adolfo Gajon</td>
-                        <td>8578hhg</td>
-                        <td>Paco Pil</td>
-                        <td>2300€</td>
-                        <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                        <td>12.345.678-A</td>
+                        <td>123 456 789</td>
+                        <td>C/Su calle 666, 9ºB</td>                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
                     </td>
                     <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
                     </td>
                     </tr>
                     <tr>
-                        <td>0002</td>
+                        <td>mail@delcliente.es</td>
                         <td>Adolfo Gajon</td>
-                        <td>8578hhg</td>
-                        <td>Paco Pil</td>
-                        <td>2300€</td>
-                        <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                        <td>12.345.678-A</td>
+                        <td>123 456 789</td>
+                        <td>C/Su calle 666, 9ºB</td>                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
                     </td>
                     <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
                     </td>
                     </tr>
                     <tr>
-                        <td>0003</td>
+                        <td>mail@delcliente.es</td>
                         <td>Adolfo Gajon</td>
-                        <td>8578hhg</td>
-                        <td>Paco Pil</td>
-                        <td>2300€</td>
-                        <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                        <td>12.345.678-A</td>
+                        <td>123 456 789</td>
+                        <td>C/Su calle 666, 9ºB</td>                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
                     </td>
                     <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
                     </td>
                     </tr>
                     <tr>
-                        <td>0004</td>
+                        <td>mail@delcliente.es</td>
                         <td>Adolfo Gajon</td>
-                        <td>8578hhg</td>
-                        <td>Paco Pil</td>
-                        <td>2300€</td>
-                        <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                        <td>12.345.678-A</td>
+                        <td>123 456 789</td>
+                        <td>C/Su calle 666, 9ºB</td>                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
                     </td>
                     <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
                     </td>

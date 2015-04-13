@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Gestión</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -26,31 +26,39 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Empresa</a>
+      <a class="navbar-brand" href="principal.html"><img src="../images/logos.png" alt="logo pequeño" width="75" height="18"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Vehículos</a></li>
-        <li><a href="#">Reservas</a></li>
-        <li><a href="#">Ventas</a></li>
-        <li><a href="#">Clientes</a></li>
-        <li><a href="#">Usuarios</a></li>
-      </ul>
-      
-      <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Cerrar sesión <i class="glyphicon glyphicon-log-out">&nbsp;</i></a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
+   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="vehiculos.html">Vehículos</a>
+                    </li>
+                    <li><a href="reservas.html">Reservas</a>
+                    </li>
+                    <li><a href="ventas.html">Ventas</a>
+                    </li>
+                    <li><a href="clientes.html">Clientes</a>
+                    </li>
+                    <li><a href="usuarios.html">Usuarios</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">Cerrar sesión <i class="glyphicon glyphicon-log-out">&nbsp;</i></a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<div class="clearfix pad-navbar"></div>
-
+<section id="cuerpo">
+<div id="logocentral">
+<img src="../images/logo72.png" alt="Logo Empresa" width="1126" height="275" class="img-responsive">
+    </div>
 <!--                      aquí codigo                           -->
 
-<div class="pad-footer"></div>
-<footer>
+</section>
+<footer class="pie_backend">
     Último inicio de sesión: 29 de febrero de 2015
 </footer>
     <!--[if lt IE 7]>
@@ -58,14 +66,7 @@
     <![endif]-->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+   
 
 
         <!-- build:js scripts/main.js -->

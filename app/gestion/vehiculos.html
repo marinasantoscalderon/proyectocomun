@@ -1,0 +1,400 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gestion de vehiculos</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="principal.html"><img src="../images/logos.png" alt="logo pequeño" width="75" height="18"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Vehículos <span class="sr-only">(current)</span></a></li>
+                    <li><a href="reservas.html">Reservas</a>
+                    </li>
+                    <li><a href="ventas.html">Ventas</a>
+                    </li>
+                    <li><a href="clientes.html">Clientes</a>
+                    </li>
+                    <li><a href="usuarios.html">Usuarios</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">Cerrar sesión <i class="glyphicon glyphicon-log-out">&nbsp;</i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+<div id="cuerpo">
+
+    <div class="container-fluid">
+        <h1>Gestión de Vehículos</h1>
+
+        <div class="panel panel-default col-md-12">
+            <div class="panel-body">
+                <div class="col-md-10">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="nombre" class="col-sm-1 control-label">Matrícula</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="nombre" placeholder="Matrícula">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-1 col-sm-11">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">Destacados
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-1 col-sm-11">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Vendidos
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2 pull-right">
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg2">Nuevo</button>
+                    <!--modal-->
+<div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+		<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Añadir vehículo</h4>
+      </div>
+			<div class="container">
+				<div class="form-group col-md-6">
+				<br>
+					<label for="precioventa">Marca</label>
+					<input type="email" class="form-control" placeholder="marca" id="precioventa">
+				</div>
+				<div class="clearfix"> </div>
+				<div class="form-group col-md-6">
+	<label for="ano">Año matriculación</label>
+					<input type="email" class="form-control" placeholder="año" id="ano">
+					</div>
+				<div class="clearfix"> </div>
+				<div class="form-group col-md-6">
+	<label for="matricula">Martricula</label>
+					<input type="email" class="form-control" placeholder="1234AAA" id="matricula">
+					</div>
+					<div class="clearfix"> </div>
+					<div class="form-group col-md-6">
+	<label for="km">Kilómetros</label>
+					<input type="email" class="form-control" placeholder="kilometros" id="km">
+					</div>
+					<div class="clearfix"> </div>
+					<div class="form-group col-md-3">
+	<label for="pvp">Precio base</label>
+					<input type="email" class="form-control" placeholder="0000€" id="pvp">
+					</div>
+					<div class="form-group col-md-3">
+	<label for="pvp2">Precio oferta</label>
+					<input type="email" class="form-control" placeholder="0000€" id="pvp2">
+					</div>
+					<div class="clearfix"> </div>
+				<div class="form-group col-lg- col-md-6">
+					<div class="pull-right">
+					<button type="submit" class="btn btn-default">Guardar</button>
+					<button type="submit" class="btn btn-default">Cancelar</button>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--fin de modal-->
+                    <input class="btn btn-default" type="button" value="buscar">
+                </div>
+            </div>
+        </div>
+        <table class="table table-bordered table-striped table-hover table-responsive">
+            <thead>
+                <tr>
+                    <th>Marca <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                    </th>
+                    <th>Año matricula <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                    </th>
+                    <th>Matrícula <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                    </th>
+                    <th>Kilómetros <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                    </th>
+                    <th>Disponible 
+                    </th>
+                    <th>Destacado</th> 
+                     <th>Editar
+                    </th>                 
+                    <th>Eliminar</th>
+                    <th>Imágenes</th>
+                   
+                    </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Opel Adolfo 1.5D</td>
+                    <td>2013</td>
+                    <td>1234ADO</td>
+                    <td>66614</td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-open" aria-hidden="true"></span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BMW Angel 2.5</td>
+                    <td>2014</td>
+                    <td>5458ANG</td>
+                    <td>3456</td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-open" aria-hidden="true"></span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mercedes Carlos 4.5i</td>
+                    <td>2011</td>
+                    <td>4589CAR</td>
+                    <td>34565</td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-open" aria-hidden="true"></span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ferrari Pablo</td>
+                    <td>2013</td>
+                    <td>2828PAB</td>
+                    <td>100000</td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-open" aria-hidden="true"></span></a>
+                    </td>
+                </tr>
+               
+            </tbody>
+        </table>
+        <div class="pager">
+            <div class="btn-group">
+                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-fast-backward" aria-hidden="true"></span>
+                </button>
+                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
+                </button>
+                <button class="btn btn-default" type="button">1</button>
+                <button class="btn btn-default active" type="button">2</button>
+                <button class="btn btn-default" type="button">3</button>
+                <button class="btn btn-default" type="button">4</button>
+                <button class="btn btn-default" type="button">...</button>
+                <button class="btn btn-default" type="button">10</button>
+                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span>
+                </button>
+                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-fast-forward" aria-hidden="true"></span>
+                </button>
+<!--modal-->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+		<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Añadir imágenes</h4>
+      </div>
+			<div class="container">
+				<div class="form-group col-lg-6 col-md-6">
+				<br>
+					<label for="precioventa">Ruta imagen</label>
+					<input type="email" class="form-control" placeholder="URL" id="precioventa">
+				</div>
+				<div class="clearfix"> </div>
+				<div class="form-group col-lg- col-md-6">
+					<label for="imagenprincipal">Imagen principal</label>
+					<select id="imagenprincipal" class="form-control">
+						<option>SI</option>
+						<option>NO</option>
+					</select>
+				</div>
+				<div class="clearfix"> </div>
+				<div class="form-group col-lg- col-md-6">
+					<label for="descripcion">Descripcion</label>
+					<textarea id="descripcion" class="form-control" placeholder="Descripción" rows="4"></textarea>
+					<br>
+					<div class="clearfix"></div>
+           <h4>Gestión de Imágenes</h4>
+            <table class="table table-bordered table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Archivo <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                        </th>
+                        <th>Descripción <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                        </th>
+                        <th>Principal</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0001</td>
+                        <td>Adolfo Gajon</td>
+                        <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                        <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>0002</td>
+                        <td>Adolfo Gajon</td>
+                        <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                        <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>0003</td>
+                        <td>Adolfo Gajon</td>
+                        <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                        <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>0004</td>
+                        <td>Adolfo Gajon</td>
+                        <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                        <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+					<div class="pull-right">
+					<button type="submit" class="btn btn-default">Guardar</button>
+					<button type="submit" class="btn btn-default">Cancelar</button>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--fin de modal-->
+                   </div>
+        </div>
+    </div>
+</section>
+   
+    <footer class="pie_backend">
+        Último inicio de sesión: 29 de febrero de 2015
+    </footer>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    
+
+
+    <!-- build:js scripts/main.js -->
+    <script src="../bower_components/jquery/jquery.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/hello.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/bootstrap.js -->
+    <script src="../bower_components/bootstrap/js/affix.js"></script>
+    <script src="../bower_components/bootstrap/js/alert.js"></script>
+    <script src="../bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="../bower_components/bootstrap/js/tooltip.js"></script>
+    <script src="../bower_components/bootstrap/js/modal.js"></script>
+    <script src="../bower_components/bootstrap/js/transition.js"></script>
+    <script src="../bower_components/bootstrap/js/button.js"></script>
+    <script src="../bower_components/bootstrap/js/popover.js"></script>
+    <script src="../bower_components/bootstrap/js/carousel.js"></script>
+    <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="../bower_components/bootstrap/js/collapse.js"></script>
+    <script src="../bower_components/bootstrap/js/tab.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
